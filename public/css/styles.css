@@ -1,0 +1,84 @@
+
+/*##################################################*/
+/* Tag Selectors */
+/*##################################################*/
+body {
+  /* Tag Selector */
+  background-color: #eeeeee;
+  /* Background of website */
+  text-align: center;
+  /* Aligning all text to the left unless specified  except where necessary */
+  font-family: "Work Sans", sans-serif;
+  margin: auto;
+  max-width: 1440px;
+}
+
+
+
+/*##################################################*/
+/* Bottom Divider (CSS to be changed later) */
+/*##################################################*/
+.bottomBox {
+  margin-top: 100px;
+  vertical-align: bottom;
+  color: #eeeeee;
+}
+
+.bottomDiv {
+  padding: 3% 8%;
+  /* top/bottom left/right */
+  margin: 0;
+  height: auto;
+  background-color: #222831;
+  font-size: 1rem;
+  /* (18px font-size / 2560px width */
+  text-decoration: none;
+  text-align: right;
+  color: #eeeeee;
+}
+.bottomDiv .col-sm-2 {
+  color: #eeeeee;
+}
+
+.bottomLink {
+  color: #eeeeee;
+  text-decoration: none;
+  transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.copyrightText {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #eeeeee;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.myLogo_bottom {
+  color: #08d9d6;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.middleLine_bottom {
+  color: #393e46;
+}
+
+.textAlter_bottom {
+  text-decoration: underline;
+  color: #eeeeee;
+}
+
+@media (max-width: 1023px) {
+  .bottomDiv {
+    font-size: 1.25rem;
+  }
+
+  .myLogo_bottom {
+    font-size: 1.8rem;
+  }
+
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-6 {
+    padding-top: 10px;
+  }
+}
