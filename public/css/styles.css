@@ -10,7 +10,14 @@ body {
   /* Aligning all text to the left unless specified  except where necessary */
   font-family: "Work Sans", sans-serif;
   margin: auto;
-  max-width: 1440px;
+  max-width: 100%;
+}
+
+/*##################################################*/
+/* Tag Selectors */
+/*##################################################*/
+.topSection .container-fluid {
+  max-width: 80%;
 }
 
 
@@ -22,6 +29,7 @@ body {
   margin-top: 100px;
   vertical-align: bottom;
   color: #eeeeee;
+  max-width: 80%
 }
 
 .bottomDiv {
