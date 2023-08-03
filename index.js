@@ -1,7 +1,10 @@
 // jshint esversion:6
 
-let express = require("express");
-let bodyParser = require("body-parser");
+//let express = require("express");
+//let bodyParser = require("body-parser");
+
+import express from "express";
+import bodyParser from "body-parser";
 
 let app = express();
 
