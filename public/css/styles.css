@@ -19,6 +19,11 @@ body {
 .framingDiv .container-fluid {
   max-width: 80%;
   margin: 0 auto;
+
+}
+
+.navbar {
+  background-image: linear-gradient(#eeeeee, yellow);
 }
 
 
@@ -26,9 +31,23 @@ body {
 /* Navbar Class Selectors */
 /*##################################################*/
 .navbar .container {
-  padding-bottom: 100px;
+  background: transparent;
+  padding-bottom: 300px;
 }
 
+.navbar #Logo img {
+  height: 70px;
+  width: 150px;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-size: 50px;
+}
+
+.nav-item {
+  font-size: 20px;
+}
 
 /*##################################################*/
 /* Bottom Divider (CSS to be changed later) */
