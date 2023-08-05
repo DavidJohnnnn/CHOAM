@@ -56,6 +56,16 @@ body {
   position: absolute;
   bottom: 50px;
   object-fit: cover;
+  color: #eeeeee;
+}
+
+.banner h1 {
+  padding-left: 15px;
+  display: block;
+}
+
+.banner p {
+  padding-left: 25px;
 }
 
 /*##################################################*/
