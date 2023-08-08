@@ -54,9 +54,11 @@ body {
 
 .banner .jumbotron {
   position: absolute;
-  bottom: 50px;
+  top: -150px;
   object-fit: cover;
   color: #eeeeee;
+  width: 1128px;
+  height: 300px;
 }
 
 .banner h1 {
