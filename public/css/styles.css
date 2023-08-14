@@ -76,18 +76,20 @@ body {
 
 .RevealCard * {
   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: 0;
 }
 
 .imgClassReveal {
   max-height: 1000px;
   overflow: visible;
   transition-delay: 500ms;
+
 }
 
 .imgClassHide {
   max-height: 0px;
   overflow: hidden;
-  transition-delay: 0;
+
 }
 
 .descriptionClassReveal {
@@ -95,12 +97,12 @@ body {
   overflow: visible;
   opacity: 100%;
   transition-delay: 500ms;
+
 }
 
 .descriptionClassHide {
   max-height: 0px;
   overflow: hidden;
-  transition-delay: 0;
   opacity: 0;
 }
 
