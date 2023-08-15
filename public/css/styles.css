@@ -79,6 +79,10 @@ body {
   transition: 0;
 }
 
+.revealImg img {
+  object-fit: cover;
+}
+
 .imgClassReveal {
   max-height: 1000px;
   overflow: visible;
