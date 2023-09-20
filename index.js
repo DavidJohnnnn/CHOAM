@@ -1,10 +1,17 @@
 // jshint esversion:6
 
+import { createRequire } from "module"; // Bring in the ability to create the 'require' method
+const require = createRequire(import.meta.url); // construct the require method
+const teamload = require("./Team.json"); // use the require method
+const team = [...teamload];
+console.log(team);
 
 import express from "express";
 import bodyParser from "body-parser";
 
 let app = express();
+
+// Using Team.json for Teams
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -24,12 +31,14 @@ app.get("/Investments", function (req, res) {
 });
 
 app.get("/Team", function (req, res) {
-  res.render("Team");
+  res.render("Team", {teamdata: teams});
 });
 
 app.get("/Contact", function (req, res) {
   res.render("Contact");
 });
+
+
 
 
 
