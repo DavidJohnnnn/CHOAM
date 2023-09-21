@@ -39,6 +39,18 @@ app.get("/Contact", function (req, res) {
 });
 
 
+/* Following involves Teams list (for a dynamic list of team members, locally saved) */
+
+team.map((item) => {
+  app.get("/Team" + item.profile.name, function (req, res) {
+    //res.render("Team", {teamdata: teams});
+  });
+  app.get("/Team" + item.profile.name + ".html", function (req, res) {
+    //res.render("Team", {teamdata: teams});
+  });
+});
+
+
 
 
 
