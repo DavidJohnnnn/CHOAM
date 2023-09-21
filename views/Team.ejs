@@ -24,55 +24,19 @@ console.log(teamdata);
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <br/>
 
+  <% teamdata.map((item) => { %>
+    <% let link = "Team/" + item.profile.name + ".html" %>
+    <% let body = item.profile.name.about.substring(0, 120) %>
 
+    <%- include('TeamCard', {
+      Link: link,
+      Title: item.profile.name,
+      Body: body,
+      ImgSrc: "https://picsum.photos/id/130/200/300",
+      ImgAlt: "..."
+    }); -%>
 
-  <%- include('TeamCard', {
-    Link: "Team/Link1.html",
-    Title: "Card title",
-    Body: "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-    ImgSrc: "https://picsum.photos/id/130/200/300",
-    ImgAlt: "..."
-  }); -%>
-
-  <hr />
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="Team/Link1.html">Card title</a></h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img src="https://picsum.photos/id/130/200/300" class="img-fluid" alt="..." style="width: auto; height: 195px;">
-    </div>
-  </div>
-
-
-  <hr />
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img src="https://picsum.photos/id/130/200/300" class="img-fluid" alt="..." style="width: auto; height: 195px;">
-    </div>
-  </div>
-
-  <hr />
-  <div class="row g-0">
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img src="https://picsum.photos/id/130/200/300" class="img-fluid" alt="..." style="width: auto; height: 195px;">
-    </div>
-  </div>
+  <% }) %>
 
   
   <br/>

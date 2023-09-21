@@ -31,7 +31,7 @@ app.get("/Investments", function (req, res) {
 });
 
 app.get("/Team", function (req, res) {
-  res.render("Team", {teamdata: teams});
+  res.render("Team", {teamdata: team});
 });
 
 app.get("/Contact", function (req, res) {
