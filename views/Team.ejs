@@ -1,6 +1,4 @@
-<%
-console.log(teamdata);
-%>
+
 
 
 <%- include('header', {
@@ -25,18 +23,19 @@ console.log(teamdata);
   <br/>
 
   <% teamdata.map((item) => { %>
-    <% let link = "Team/" + item.profile.name + ".html" %>
-    <% let body = item.profile.name.about.substring(0, 120) %>
-
+    <% let link = "Team/" + item.profile.name + ".html"; %>
+    <% let body = item.profile.about.substring(0, 120); %>
+    
     <%- include('TeamCard', {
       Link: link,
-      Title: item.profile.name,
+      Name: item.profile.name,
+      Title: item.id,
       Body: body,
       ImgSrc: "https://picsum.photos/id/130/200/300",
       ImgAlt: "..."
     }); -%>
 
-  <% }) %>
+  <% }); %>
 
   
   <br/>
