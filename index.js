@@ -41,6 +41,11 @@ app.get("/Contact", function (req, res) {
 /* Following involves Teams list (for a dynamic list of team members, locally saved) */
 console.log("x")
 
+let names = []
+team.map((item)=>{
+  names.push(item.profile.name);
+});
+
 team.map((item) => {
   let link = "/Team/" + item.profile.name;
   link = encodeURI(link);

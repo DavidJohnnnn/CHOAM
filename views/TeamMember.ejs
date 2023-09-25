@@ -1,0 +1,66 @@
+<%- include('header', {
+    tabTitle: "Team",
+    favicon: "CHOAM_flag.ico",
+  }); -%>
+  
+  <%- include('navbar', {
+    Logo: "CHOAM_flag.svg",
+    BannerTitle: "Team",
+    BannerSubtitle: "Lorem ipsum dolor sit amet",
+    Home: "",
+    Philosophy: "",
+    Investments: "",
+    Team: "active",
+    Contact: "",
+  
+  }); %>
+  
+  <div class="container text-justify">
+    <div class="row" style="margin: auto;">
+      <div class="col-md-3 text-left">
+        <div>
+            <% tList.map((item) => { %>
+                <% let link = "/Team/" + item; %>
+                <a href="<%= link %>" class="list-group-item list-group-item-action active">
+                    <%= item %>
+                  </a>
+            }) %>
+        </div>
+        <hr>
+        <h6><b>Combine Honnete Ober Advancer Mercantiles</b></h6>
+        <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</em></p>
+      </div>
+      <div style="margin-right: 3em;"></div>
+      <div style="background-color: red; width: 1px; margin-right: 1em;">
+  
+      </div>
+  
+      <div class="col-md-8">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <br/>
+  
+    <% teamdata.map((item) => { %>
+      <% let link = "/Team/" + item.profile.name; %>
+      <% link = encodeURI(link); %>
+      <% let body = item.profile.about.substring(0, 120); %>
+      
+      <%- include('TeamCard', {
+        Link: link,
+        Name: item.profile.name,
+        Title: item.id,
+        Body: body,
+        ImgSrc: "https://picsum.photos/id/130/200/300",
+        ImgAlt: "..."
+      }); -%>
+  
+    <% }); %>
+  
+    
+    <br/>
+    <h6 style="color: black;"><em>CHOAM - slogan slogan slogan</em></h6>
+  
+  <%- include('BodyTextClose') -%>
+  
+  
+  <%- include('footer'); -%>
+  
