@@ -20,7 +20,7 @@
   <br/>
 
   <% teamdata.map((item) => { %>
-    <% let link = "Team/" + item.profile.name + ".html"; %>
+    <% let link = "/Team/" + item.profile.name; %>
     <% link = encodeURI(link); %>
     <% let body = item.profile.about.substring(0, 120); %>
     

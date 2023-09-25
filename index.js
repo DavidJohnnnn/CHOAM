@@ -40,36 +40,13 @@ app.get("/Contact", function (req, res) {
 
 /* Following involves Teams list (for a dynamic list of team members, locally saved) */
 console.log("x")
+
 team.map((item) => {
-  let link = "Team/" + item.profile.name + ".html";
+  let link = "/Team/" + item.profile.name;
   link = encodeURI(link);
   app.get(link, function (req, res) {
-    res.redirect("Contact");
+    res.send("Contact");
   });
-});
-
-
-
-
-
-app.get("/index.html", function (req, res) {
-  res.redirect("/");
-});
-
-app.get("/Philosophy.html", function (req, res) {
-  res.redirect("/Philosophy");
-});
-
-app.get("/Investments.html", function (req, res) {
-  res.redirect("/Investments");
-});
-
-app.get("/Team.html", function (req, res) {
-  res.redirect("/Team");
-});
-
-app.get("/Contact.html", function (req, res) {
-  res.redirect("/Contact");
 });
 
 
