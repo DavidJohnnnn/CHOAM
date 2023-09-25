@@ -4,7 +4,6 @@ import { createRequire } from "module"; // Bring in the ability to create the 'r
 const require = createRequire(import.meta.url); // construct the require method
 const teamload = require("./Team.json"); // use the require method
 const team = [...teamload];
-console.log(team);
 
 import express from "express";
 import bodyParser from "body-parser";
@@ -40,13 +39,12 @@ app.get("/Contact", function (req, res) {
 
 
 /* Following involves Teams list (for a dynamic list of team members, locally saved) */
-
+console.log("x")
 team.map((item) => {
-  app.get("/Team" + item.profile.name, function (req, res) {
-    //res.render("Team", {teamdata: teams});
-  });
-  app.get("/Team" + item.profile.name + ".html", function (req, res) {
-    //res.render("Team", {teamdata: teams});
+  let link = "Team/" + item.profile.name + ".html";
+  link = encodeURI(link);
+  app.get(link, function (req, res) {
+    res.redirect("Contact");
   });
 });
 
