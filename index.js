@@ -47,10 +47,10 @@ team.map((item)=>{
 });
 
 team.map((item) => {
-  let link = "/Team/" + item.profile.name;
+  let link = "/" + item.profile.name;
   link = encodeURI(link);
   app.get(link, function (req, res) {
-    res.send("Contact");
+    res.render("Contact");
   });
 });
 
