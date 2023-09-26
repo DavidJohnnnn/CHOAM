@@ -50,7 +50,7 @@ team.map((item) => {
   let link = "/" + item.profile.name;
   link = encodeURI(link);
   app.get(link, function (req, res) {
-    res.render("Contact");
+    res.render("TeamMember", {tList: names});
   });
 });
 

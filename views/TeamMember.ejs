@@ -20,11 +20,11 @@
       <div class="col-md-3 text-left">
         <div>
             <% tList.map((item) => { %>
-                <% let link = "/Team/" + item; %>
+                <% let link = "/" + item; %>
                 <a href="<%= link %>" class="list-group-item list-group-item-action">
                     <%= item %>
                   </a>
-            }) %>
+            <% }); %>
         </div>
         <hr>
         <h6><b>Combine Honnete Ober Advancer Mercantiles</b></h6>
@@ -38,22 +38,6 @@
       <div class="col-md-8">
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <br/>
-  
-    <% teamdata.map((item) => { %>
-      <% let link = "/Team/" + item.profile.name; %>
-      <% link = encodeURI(link); %>
-      <% let body = item.profile.about.substring(0, 120); %>
-      
-      <%- include('TeamCard', {
-        Link: link,
-        Name: item.profile.name,
-        Title: item.id,
-        Body: body,
-        ImgSrc: "https://picsum.photos/id/130/200/300",
-        ImgAlt: "..."
-      }); -%>
-  
-    <% }); %>
   
     
     <br/>
