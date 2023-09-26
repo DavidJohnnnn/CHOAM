@@ -45,6 +45,8 @@
     <h5><a href="mailto:<%= member.email %>" target="_blank"><%= member.email %></a></h5>
     <hr>
     
+    <% let num = Math.floor(Math.random() * (100 - 0 + 1) + 0) %>
+    <img src="https://picsum.photos/id/<%= num %>/200/200" alt="placeholder" align="right" style="margin-left: 14px" />
     <p><%= member.profile.about %></p>
     <hr>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
