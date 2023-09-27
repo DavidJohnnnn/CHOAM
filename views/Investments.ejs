@@ -15,73 +15,23 @@
 
 }); %>
 
-<% console.log(investdata[0]); %>
 
 <div class="container px-4">
   <div class="row g-2">
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
 
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
+    <% investdata.map((item) => { %>
+      <% let img = "https://picsum.photos/id/" + Math.floor(Math.random() * (100 - 0 + 1) + 0) 
+      + "/200/200"; %>
 
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
+      <%- include('RevealCard', {
+        ImgSrc: img,
+        ID: item.id,
+        Company: item.profile.company,
+        Description: item.profile.about,
+        Address: item.profile.address
+      }); %>
 
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      ID: investdata[0].id,
-      Company: investdata[0].profile.company,
-      Description: investdata[0].profile.about,
-      Address: investdata[0].profile.address
-    }); %>
+    <% }); %>
     
   </div>
 </div>
