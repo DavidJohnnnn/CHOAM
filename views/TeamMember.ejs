@@ -21,7 +21,7 @@
         <div>
             <% tList.map((item) => { %>
                 <% let link = "/" + item; %>
-                <% let classname = "list-group-item list-group-item-action"; %>
+                <% let classname = "list-group-item list-group-item-dark border-danger"; %>
                 <% if (item === member.profile.name) { classname = classname + " active" } %>
                 <a href="<%= link %>" class="<%= classname %>">
                     <%= item %>
@@ -40,9 +40,9 @@
       <div class="col-md-8">
     
     
-    <h4><%= member.profile.name %></h4>
-    <h5><i><%= member.id %></i></h5>
-    <h5><a href="mailto:<%= member.email %>" target="_blank"><%= member.email %></a></h5>
+    <h5><%= member.profile.name %></h5>
+    <h6><i><%= member.id %></i></h6>
+    <h6><a href="mailto:<%= member.email %>" target="_blank"><%= member.email %></a></h6>
     <hr>
     
     <% let num = Math.floor(Math.random() * (100 - 0 + 1) + 0) %>
