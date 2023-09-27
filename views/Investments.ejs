@@ -15,50 +15,74 @@
 
 }); %>
 
+<% console.log(investdata[0]); %>
 
 <div class="container px-4">
   <div class="row g-2">
     <%- include('RevealCard', {
       ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
-    }); %>
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/id/237/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
-    }); %>
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/id/237/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
     }); %>
 
     <%- include('RevealCard', {
       ImgSrc: "https://picsum.photos/seed/picsum/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
     }); %>
 
     <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/id/237/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
-    }); %>
-
-
-    <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/id/237/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
+      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
     }); %>
 
     <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/id/237/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
+      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
     }); %>
-
 
     <%- include('RevealCard', {
-      ImgSrc: "https://picsum.photos/id/237/200/200",
-      Description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut tortor maximus risus cursus sollicitudin vestibulum ut enim. Praesent at est vitae ex tincidunt porta ut in metus. In lobortis mi at augue facilisis, ut vestibulum neque mattis."
+      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
     }); %>
+
+    <%- include('RevealCard', {
+      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
+    }); %>
+
+    <%- include('RevealCard', {
+      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
+    }); %>
+
+    <%- include('RevealCard', {
+      ImgSrc: "https://picsum.photos/seed/picsum/200/200",
+      ID: investdata[0].id,
+      Company: investdata[0].profile.company,
+      Description: investdata[0].profile.about,
+      Address: investdata[0].profile.address
+    }); %>
+    
   </div>
 </div>
 
