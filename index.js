@@ -2,8 +2,15 @@
 
 import { createRequire } from "module"; // Bring in the ability to create the 'require' method
 const require = createRequire(import.meta.url); // construct the require method
-const teamload = require("./Team.json"); // use the require method
+
+// use the require method for importing Team.json and Investments.json
+const teamload = require("./Team.json");
+const investload = require("./Investments.json");
+
 const team = [...teamload];
+const investments = [...investload];
+
+
 
 import express from "express";
 import bodyParser from "body-parser";
@@ -26,7 +33,7 @@ app.get("/Philosophy", function (req, res) {
 });
 
 app.get("/Investments", function (req, res) {
-  res.render("Investments");
+  res.render("Investments", {investdata: investments});
 });
 
 app.get("/Team", function (req, res) {
@@ -39,7 +46,6 @@ app.get("/Contact", function (req, res) {
 
 
 /* Following involves Teams list (for a dynamic list of team members, locally saved) */
-console.log("x")
 
 let names = []
 team.map((item)=>{
