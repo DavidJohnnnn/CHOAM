@@ -13,15 +13,16 @@ body {
   max-width: 100%;
 }
 
-/*##################################################*/
-/* Navbar Class Selectors */
-/*##################################################*/
-.framingDiv .container-fluid {
+.framingDiv.container-fluid {
   max-width: 80%;
   margin: 0 auto;
   padding-left: 0;
-
+  padding-right: 0;
 }
+
+/*##################################################*/
+/* Navbar Class Selectors */
+/*##################################################*/
 
 .navbar {
   background-image: linear-gradient(#eeeeee, yellow);
@@ -68,6 +69,22 @@ body {
 
 .banner p {
   padding-left: 25px;
+}
+
+@media (min-width: 1441px) {
+  
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+  
+}
+@media (max-device-width: 768px) and (min-device-width: 426px) {
+  
+}
+@media (max-device-width: 425px) and (min-device-width: 376px) {
+  
+}
+@media (max-device-width: 375px) and (min-device-width: 0px) {
+  
 }
 
 /*##################################################*/
@@ -200,3 +217,22 @@ body {
   width: 0;
   transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
 }
+
+
+
+
+/* @media (min-width: 1441px) {
+  
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+  
+}
+@media (max-device-width: 768px) and (min-device-width: 426px) {
+  
+}
+@media (max-device-width: 425px) and (min-device-width: 376px) {
+  
+}
+@media (max-device-width: 375px) and (min-device-width: 0px) {
+  
+} */
