@@ -72,7 +72,21 @@ body {
 }
 
 @media (min-width: 1441px) {
-  
+  .navbar .container {
+    margin-left: 0;
+    margin-right: 0;
+  }.banner .jumbotron {
+    width: 2020px;
+    height: 300px;
+  } .navbar #Logo img {
+    height: 140px;
+    width: 300px;
+    object-fit: contain;
+  } .navbar-brand {
+    font-size: 100px;
+  } .nav-item {
+    font-size: 40px;
+  }
 }
 @media (max-width: 1440px) and (min-width: 769px) {
   
