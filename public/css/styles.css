@@ -204,10 +204,7 @@ body {
 
 /* Responsive Dimensions */
 @media (min-width: 1441px) {
-  .banner .jumbotron {
-    width: 2020px;
-    height: 300px;
-  } .navbar #Logo img {
+  .navbar #Logo img {
     height: 140px;
     width: 300px;
     object-fit: contain;
@@ -216,6 +213,19 @@ body {
   } .nav-item {
     font-size: 45px;
   }
+
+  .banner .jumbotron {
+    width: 2020px;
+    height: 300px;
+  } .banner h1 {
+    padding-left: 15px;
+    font-size: 5rem;
+  } .banner p {
+    padding-left: 25px;
+    font-size: 2rem;
+  }
+
+  
 }
 @media (max-width: 1440px) and (min-width: 769px) {
   
