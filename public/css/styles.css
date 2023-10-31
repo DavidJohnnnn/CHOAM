@@ -28,7 +28,7 @@ body {
   background-image: linear-gradient(#eeeeee, yellow);
 }
 
-.navbar .container {
+.navbar .container-fluid {
   background: transparent;
   padding-bottom: 200px;
 }
@@ -69,36 +69,6 @@ body {
 
 .banner p {
   padding-left: 25px;
-}
-
-@media (min-width: 1441px) {
-  .navbar .container {
-    margin-left: 0;
-    margin-right: 0;
-  }.banner .jumbotron {
-    width: 2020px;
-    height: 300px;
-  } .navbar #Logo img {
-    height: 140px;
-    width: 300px;
-    object-fit: contain;
-  } .navbar-brand {
-    font-size: 100px;
-  } .nav-item {
-    font-size: 40px;
-  }
-}
-@media (max-width: 1440px) and (min-width: 769px) {
-  
-}
-@media (max-device-width: 768px) and (min-device-width: 426px) {
-  
-}
-@media (max-device-width: 425px) and (min-device-width: 376px) {
-  
-}
-@media (max-device-width: 375px) and (min-device-width: 0px) {
-  
 }
 
 /*##################################################*/
@@ -232,6 +202,33 @@ body {
   transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
 }
 
+/* Responsive Dimensions */
+@media (min-width: 1441px) {
+  .banner .jumbotron {
+    width: 2020px;
+    height: 300px;
+  } .navbar #Logo img {
+    height: 140px;
+    width: 300px;
+    object-fit: contain;
+  } .navbar-brand {
+    font-size: 100px;
+  } .nav-item {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+  
+}
+@media (max-device-width: 768px) and (min-device-width: 426px) {
+  
+}
+@media (max-device-width: 425px) and (min-device-width: 376px) {
+  
+}
+@media (max-device-width: 375px) and (min-device-width: 0px) {
+  
+}
 
 
 
